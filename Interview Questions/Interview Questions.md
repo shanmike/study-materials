@@ -26,7 +26,7 @@ The box model is used to position HTML elements when laying out a documents, the
 ### What's the difference between a relative, fixed, absolute and statically positioned element?
 ### What is the transform property and how does it work?
 ### Describe Floats and how they work.
-### What are the different ways to visually hide content (and make it available only for screen readers)?
+### What are the different ways to visually hide content?
 ### What's the difference between inline and inline-block?
 
 # JAVASCRIPT
@@ -46,7 +46,7 @@ function outer() {
 //inner can access outer's local variables because of scope
 //inner modifies num  and returns the new value   
 		num++; 
-		console.log("The current value of num: ", num);     
+		console.log('The current value of num: ', num);     
 	}
 //outer returns inner
 	return inner;
@@ -64,7 +64,7 @@ Context is always the value of this, which is a reference to the object that own
 ### What is hoisting?
 ### What’s the difference between a for loop and a for in loop?
 ### Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
-### Describe square bracket notation and when you would use it (hint arrays and objects).
+### Describe square bracket notation and when you would use it.
 ### Describe 3 ES6 features and how they differ from ES5.
 ### What are the differences between ES6 class and ES5 function constructors?
 ### Describe how scoping works in JavaScript.
