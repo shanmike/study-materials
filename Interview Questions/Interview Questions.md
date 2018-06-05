@@ -40,16 +40,16 @@ Closures are formed when a inner function (nested function) is defined inside of
 //outer function scope enclosing the inner function (function within a function)
 function outer() {
 //num is a local variable created by outer
-	var num = 1;
+ var num = 1;
 //inner() is the inner function, a closure
-	function inner(){
+ function inner(){
 //inner can access outer's local variables because of scope
 //inner modifies num  and returns the new value   
-		num++; 
-		console.log(‘The current value of num: ‘, num’);     
-	}
+  num++; 
+  console.log(‘The current value of num: ‘, num’);     
+ }
 //outer returns inner
-    return inner;
+ return inner;
 }
 //outer is invoked and inner is returned
 var closure1 = outer();
