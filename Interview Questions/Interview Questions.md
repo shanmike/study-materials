@@ -36,29 +36,30 @@ The box model is used to position HTML elements when laying out a documents, the
 Closures are formed when a inner function (nested function) is defined inside of outer function, allowing access to the outer functions variables. Closures retain state and scope. Returning the nested function allows you to maintain access to the inner, outer, and global variables and arguments.
 
 
+		```javascript
 		//outer function scope enclosing the inner function (function within a function)
 
-      	function outer() { 
+      	function outer() {
 
 		//num is a local variable created by outer
 
-	     var num = 1; 
+	    	var num = 1;
 
 		//inner() is the inner function, a closure
 
-	     function inner(){
+	    	function inner(){
 
-		inner can access outer's local variables because of scope
+		//inner can access outer's local variables because of scope
 
 		//inner modifies num  and returns the new value   
 
-		num++; 
+				num++; 
 
-		console.log(‘The current value of num: ‘, num’);     
-     
+				console.log(‘The current value of num: ‘, num’);     
+			}
 		//outer returns inner
 
-     	return inner;
+     			return inner;
 		}
 
 		//outer is invoked and inner is returned
@@ -68,6 +69,7 @@ Closures are formed when a inner function (nested function) is defined inside of
 		//Since closure1  is a function, we can invoke it.
 
 		closure1();
+		```
 
 ### Describe context.
 
