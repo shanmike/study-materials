@@ -37,38 +37,24 @@ Closures are formed when a inner function (nested function) is defined inside of
 
 
 ```javascript
-		//outer function scope enclosing the inner function (function within a function)
-
-      	function outer() {
-
-		//num is a local variable created by outer
-
-	    	var num = 1;
-
-		//inner() is the inner function, a closure
-
-	    	function inner(){
-
-		//inner can access outer's local variables because of scope
-
-		//inner modifies num  and returns the new value   
-
-				num++; 
-
-				console.log(‘The current value of num: ‘, num’);     
-			}
-		//outer returns inner
-
-     			return inner;
-		}
-
-		//outer is invoked and inner is returned
-
-		var closure1 = outer();
-
-		//Since closure1  is a function, we can invoke it.
-
-		closure1();
+//outer function scope enclosing the inner function (function within a function)
+function outer() {
+//num is a local variable created by outer
+	var num = 1;
+//inner() is the inner function, a closure
+	function inner(){
+//inner can access outer's local variables because of scope
+//inner modifies num  and returns the new value   
+		num++; 
+		console.log(‘The current value of num: ‘, num’);     
+	}
+//outer returns inner
+    return inner;
+}
+//outer is invoked and inner is returned
+var closure1 = outer();
+//Since closure1  is a function, we can invoke it.
+closure1();
 ```
 
 ### Describe context.
