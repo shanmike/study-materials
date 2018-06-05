@@ -4,13 +4,13 @@
 
 CSS selectors are used to target HTML Elements on our pages that we want to style.
 
-* **Class**:   	  className =”index” will match any element that has class of “index”
-* **ID**:          #id will match the element that has the ID of “id”
-* **Type**:     	  div will match any `<div>` element
-* **Attribute**:   [type] will match all elements that have type attribute set
-* **Sibling**:     h2 + p will match all `<p>` elements that directly follow and `<h2>`
-* **Child**:       ul > li will match all `<li>` elements that are nested directly inside a `<ul>`
-* **Descendant**:  div span will match all `<span>` elements that are inside of a `<div>`
+* **Class**:   	  `className ='index'` will match any element that has class of “index”
+* **ID**:          `#id` will match the element that has the ID of “id”
+* **Type**:     	  `div` will match any `<div>` element
+* **Attribute**:   `[type]` will match all elements that have type attribute set
+* **Sibling**:     `h2 + p` will match all `<p>` elements that directly follow and `<h2>`
+* **Child**:       `ul > li` will match all `<li>` elements that are nested directly inside a `<ul>`
+* **Descendant**:  `div span` will match all `<span>` elements that are inside of a `<div>`
 
 ### Describe the box model.
 
@@ -37,22 +37,36 @@ Closures are formed when a inner function (nested function) is defined inside of
 
 
 **outer function scope enclosing the inner function (function within a function)**
+
 function outer() { 
-**num is a local variable created by outer**              
+
+**num is a local variable created by outer**  
+
 	     var num = 1; 
+
 **inner() is the inner function, a closure**
+
 	     function inner(){
+
 **inner can access outer's local variables because of scope**
-**inner modifies num  and returns the new value**           
+
+**inner modifies num  and returns the new value**    
+
 		num++; 
+
 console.log(‘The current value of num: ‘, num’);     
      
 **outer returns inner**
+
      return inner;
 }
+
 **outer is invoked and inner is returned**
+
 var closure1 = outer();
+
 **Since closure1  is a function, we can invoke it.**
+
 closure1();
 
 ### Describe context.
