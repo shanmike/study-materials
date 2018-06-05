@@ -46,7 +46,7 @@ function outer() {
 //inner can access outer's local variables because of scope
 //inner modifies num  and returns the new value   
   num++; 
-  console.log(‘The current value of num: ‘, num’);     
+  console.log("The current value of num: ", num);     
  }
 //outer returns inner
  return inner;
