@@ -4,13 +4,13 @@
 
 CSS selectors are used to target HTML Elements on our pages that we want to style.
 
-* **Class**:   	  `className ='index'` will match any element that has class of “index”
-* **ID**:          `#id` will match the element that has the ID of “id”
-* **Type**:     	  `div` will match any `<div>` element
-* **Attribute**:   `[type]` will match all elements that have `type` attribute set
-* **Sibling**:     `h2 + p` will match all `<p>` elements that directly follow an `<h2>`
-* **Child**:       `ul > li` will match all `<li>` elements that are nested directly inside a `<ul>`
-* **Descendant**:  `div span` will match all `<span>` elements that are inside of a `<div>`
+* **Class**: `className ='index'` will match any element that has class of “index”
+* **ID**: `#id` will match the element that has the ID of “id”
+* **Type**: `div` will match any `<div>` element
+* **Attribute**: `[type]` will match all elements that have `type` attribute set
+* **Sibling**: `h2 + p` will match all `<p>` elements that directly follow an `<h2>`
+* **Child**: `ul > li` will match all `<li>` elements that are nested directly inside a `<ul>`
+* **Descendant**: `div span` will match all `<span>` elements that are inside of a `<div>`
 
 ### Describe the box model.
 
@@ -29,11 +29,19 @@ Examples: *Hover, Active, Disabled, Nth-child, Visited*
 * **Hover**: `:hover` is triggered when the user hovers over an element with a mouse
 * **Active**: `:active` is triggered when the user clicks on an element, and ends with it is released
 * **Disabled**: `:disabled` represents disabled elements that can't be activated (selected, clicked, typed into, etc) If enabled, the element can then be activated or accept focus
-* **Nth-child**: `:nth-child()` is specified with a single arguement, which represents the parttern for matching elements
+* **Nth-child**: `:nth-child()` is specified with a single arguement, which represents the pattern for matching elements
 * **Visited**: `:visited:` represents linked that the user has already visited
 
 ### What are the different properties for position and how do they work?
-### What's the difference between a relative, fixed, absolute and statically positioned element?
+The position property specifies the type of positioning method used for an element *Static, Relative, Absolute, Fixed, or Sticky*
+
+* **Static**: Every element has a static position by default, `top`, `left`, `right`, and `bottom` will have no effect on that element
+* **Relative**: Elements original position remains in the flow of document, but now `top`, `left`, `right`, and `bottom` will work and position the element in that direction
+* **Absolute**: Element is removed from the flow of the document and is positioned relative to the nearest positioned ancestor. It can then be positioned by `top`, `left`, `right`, and `bottom` 
+* **Fixed**: Element is removed from flow, almost like absolute, but only fixed positioned elements remain relative to the document, allowing it to stay in place even if the page is scrolled. It can then be positioned by `top`, `left`, `right`, and `bottom` 
+* **Sticky**: It’s like a relative and fixed element, until the scroll location reaches a specific threshold. It then takes on a fixed position where its told to stick in place.
+
+### What is specificity?
 ### What is the transform property and how does it work?
 ### Describe Floats and how they work.
 ### What are the different ways to visually hide content?
@@ -93,7 +101,7 @@ Context is always the value of *this* , which is a reference to the object that 
 ### What are the pros and cons of immutability?
 ### How can you achieve immutability in your own code?
 ### Why is it called a Ternary operator, what does the word "Ternary" indicate?
-### What is "use strict";? what are the advantages and disadvantages to using it?
+### What is "use strict"? What are the advantages and disadvantages to using it?
 ### What is event loop?
 ### What is the difference between call stack and task queue?
 ### What advantage is there for using the arrow syntax for a method in a constructor?
@@ -113,7 +121,7 @@ Context is always the value of *this* , which is a reference to the object that 
 ### What are refs in react?
 ### What are keys in react and why should we use them with lists?
 ### What are React lifecycle events?
-### Explain Ajax in as much detail as possible and what the advantages / disadvantages are?
+### Explain AJAX in as much detail as possible and what the advantages / disadvantages are?
 ### Where should you make AJAX requests?
 ### How is React different from vanilla JS, jQuery, and Angular?
 ### What is unidirectional data flow in React?
