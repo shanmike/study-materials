@@ -22,6 +22,16 @@ The box model is used to position HTML elements when laying out a documents, the
 * **Margin**: Bounded by the margin edge, extends the border area to include an empty area used to separate the element from its neighbors. 
 
 ### Describe Pseudo selectors in CSS.
+
+A Pseudo selector specifies a style based state of the selected element. 
+Examples: *Hover, Active, Disabled, Nth-child, Visited*
+
+* **Hover**: `:hover` is triggered when the user hovers over an element with a mouse
+* **Active**: `:active` is triggered when the user clicks on an element, and ends with it is released
+* **Disabled**: `:disabled` represents disabled elements that can't be activated (selected, clicked, typed into, etc) If enabled, the element can then be activated or accept focus
+* **Nth-child**: `:nth-child()` is specified with a single arguement, which represents the parttern for matching elements
+* **Visited**: `:visited:` represents linked that the user has already visited
+
 ### What are the different properties for position and how do they work?
 ### What's the difference between a relative, fixed, absolute and statically positioned element?
 ### What is the transform property and how does it work?
@@ -51,15 +61,14 @@ function outer() {
 //outer returns inner
 	return inner;
 }
-//outer is invoked and inner is returned
+//outer is inv oked and inner is returned
 var closure1 = outer();
-//Since closure1  is a function, we can invoke it.
 closure1();
 ```
 
 ### Describe context.
 
-Context is always the value of this, which is a reference to the object that owns the code that is currently being executed.
+Context is always the value of *this* , which is a reference to the object that owns the code that is currently being executed.
 
 ### What is hoisting?
 ### What’s the difference between a for loop and a for in loop?
