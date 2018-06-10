@@ -18,11 +18,11 @@ function duplicateCount(str){
     str = str.toLowerCase()
     let arr = []
     for (var i = 0; i < str.length; i++) {
-       if(str.indexOf(str[i]) !== i){
-         if(!arr.includes(str[i])){
-           arr.push(str[i])
-         }
-       }
+        if(str.indexOf(str[i]) !== i){
+            if(!arr.includes(str[i])){
+            arr.push(str[i])
+            }
+        }
     }
     return arr.length
-  }
+}
