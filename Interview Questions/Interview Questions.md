@@ -24,7 +24,7 @@ The box model is used to position HTML elements when laying out a documents, the
 ### Describe Pseudo selectors in CSS.
 
 A Pseudo selector specifies a style based state of the selected element. 
-Examples: *Hover, Active, Disabled, Nth-child, Visited*
+Examples: *Hover, Active, Disabled, Nth-child, Visited, etc.*
 
 * **Hover**: `:hover` is triggered when the user hovers over an element with a mouse
 * **Active**: `:active` is triggered when the user clicks on an element, and ends with it is released
@@ -35,11 +35,11 @@ Examples: *Hover, Active, Disabled, Nth-child, Visited*
 ### What are the different properties for position and how do they work?
 The position property specifies the type of positioning method used for an element *Static, Relative, Absolute, Fixed, or Sticky*
 
-* **Static**: Every element has a static position by default, `top`, `left`, `right`, and `bottom` will have no effect on that element
-* **Relative**: Elements original position remains in the flow of document, but now `top`, `left`, `right`, and `bottom` will work and position the element in that direction
-* **Absolute**: Element is removed from the flow of the document and is positioned relative to the nearest positioned ancestor. It can then be positioned by `top`, `left`, `right`, and `bottom` 
-* **Fixed**: Element is removed from flow, almost like absolute, but only fixed positioned elements remain relative to the document, allowing it to stay in place even if the page is scrolled. It can then be positioned by `top`, `left`, `right`, and `bottom` 
-* **Sticky**: It’s like a relative and fixed element, until the scroll location reaches a specific threshold. It then takes on a fixed position where its told to stick in place.
+* **Static**: `position: static;` Every element has a static position by default, `top`, `left`, `right`, and `bottom` will have no effect on that element
+* **Relative**: `position: relative;` Elements original position remains in the flow of document, but now `top`, `left`, `right`, and `bottom` will work and position the element in that direction
+* **Absolute**: `position: absolute;` Element is removed from the flow of the document and is positioned relative to the nearest positioned ancestor. It can then be positioned by `top`, `left`, `right`, and `bottom` 
+* **Fixed**: `position: fixed;` Element is removed from flow, almost like absolute, but only fixed positioned elements remain relative to the document, allowing it to stay in place even if the page is scrolled. It can then be positioned by `top`, `left`, `right`, and `bottom` 
+* **Sticky**: `position: sticky;` It’s like a relative and fixed element, until the scroll location reaches a specific threshold. It then takes on a fixed position where its told to stick in place.
 
 ### What is specificity?
 ### What is the transform property and how does it work?
@@ -55,7 +55,7 @@ Closures are formed when a inner function (nested function) is defined inside of
 
 
 ```javascript
-//outer function scope enclosing the inner function (function within a function)
+//outer function scope enclosing the inner function (nested function)
 function outer() {
 //num is a local variable created by outer
 	var num = 1;
@@ -78,6 +78,21 @@ closure1();
 
 Context is always the value of *this* , which is a reference to the object that owns the code that is currently being executed.
 
+```javascript
+// obj with a property and a method
+var obj = {
+// num is property with a value of 1
+	num: 1,
+// add is a method that returns it's this
+	add: function(){
+// return the value of this
+		return this.prop;
+	},
+};
+// call add as a method of obj
+console.log(obj.add())
+// expected output: 1
+```
 ### What is hoisting?
 ### What’s the difference between a for loop and a for in loop?
 ### Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
