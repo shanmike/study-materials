@@ -94,6 +94,21 @@ console.log(obj.add())
 // expected output: 1
 ```
 ### What is hoisting?
+
+Conceptually, variable and function declarations are moved to the top of your code. In actuality, memory space for variable and function declarations are allocated during the creation phase, but stays in place where you typed it
+
+```javascript
+// invoke myName with "Michael" as an arguement
+myName("Michael");
+
+// during the creation phase, myName will setup up memory space for functions and variables
+// function that takes in one arguement
+function myName(name){
+// expected output: My name is Michael
+	console.log("My name is " + name);
+};
+```
+
 ### What’s the difference between a for loop and a for in loop?
 ### Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
 ### Describe square bracket notation and when you would use it.
