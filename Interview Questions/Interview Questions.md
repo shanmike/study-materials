@@ -110,6 +110,36 @@ function myName(name){
 ```
 
 ### What’s the difference between a for loop and a for in loop?
+
+
+* **For Loop**: `for loop` iterates through an array like object or repeats a block of code until a specified condition evaluates to false
+
+```javascript
+// declare arr initial value of [1,2,3,4,5]
+var arr = [1,2,3,4,5]
+// iterates over all items in arr
+for (var i = 0; i < arr.length; i++){
+// add 5 to each item in arr
+  arr[i] += 5
+}
+// expected output: [ 6, 7, 8, 9, 10 ]
+console.log(arr)
+```
+
+* **For In Loop**: `for...in` statement iterates through all of the enumerable properties of an object
+
+```javascript
+// declare obj initial value of {a:1, b:2, c:3}
+var obj = {a:1, b:2, c:3}
+// iterate over all obj enumerable properties
+for(var prop in obj){
+// add 5 to each property in obj
+  obj[prop] += 5
+}
+// expect output: { a: 6, b: 7, c: 8 }
+console.log(obj)
+```
+
 ### Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
 ### Describe square bracket notation and when you would use it.
 ### Describe 3 ES6 features and how they differ from ES5.
