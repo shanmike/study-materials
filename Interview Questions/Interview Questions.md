@@ -42,6 +42,14 @@ The position property specifies the type of positioning method used for an eleme
 * **Sticky**: `position: sticky;` It’s like a relative and fixed element, until the scroll location reaches a specific threshold. It then takes on a fixed position where its told to stick in place.
 
 ### What is specificity?
+
+Every selector has values assigned to them to rank the precedence that they will have over each other. The browser will use this to decide which CSS properties are most relevant and apply those styles. There are four categories which define the specificity level of a selector: *Elements, Classes, IDs, and Inline Styles*
+
+* **Elements/Pseudo-elements**: such as `h1`, `div`, `:before` `:after` are worth *1 point*
+* **Classes/Pseudo-classes**: such as `:hover`, `:focus` are worth *10 points*
+* **IDs**: such as `#navbar` are worth *100 points*
+* **Inline Styles**: such as `<h1 style="color:#FFF">` are worth *1000 points*
+
 ### What is the transform property and how does it work?
 ### Describe Floats and how they work.
 ### What are the different ways to visually hide content?
