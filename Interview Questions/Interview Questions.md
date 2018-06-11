@@ -51,6 +51,14 @@ Every selector has values assigned to them to rank the precedence that they will
 * **Inline Styles**: such as `<h1 style="color:#FFF">` are worth *1000 points*
 
 ### What is the transform property and how does it work?
+
+Transform property applies 2D or 3D transformations to an element allowing you to change the elements shape, size, and position. This property allows you to *Rotate, Scale, Translate, Skew, etc.*, elements.
+
+* **Rotate**: `rotate()` rotates an element around a fixed point on a 2D plane, without deforming it
+* **Scale**: `scale()` resizes an element on a 2D plane. It can resize the horizontal and vertical dimensions
+* **Translate**: `translate()` repositions an element in the horizonal / vertical directions
+* **Skew**: `skew()` is specified with either one or two values, which represent the amount of skewing to be applied in each direction.
+
 ### Describe Floats and how they work.
 ### What are the different ways to visually hide content?
 ### What's the difference between inline and inline-block?
