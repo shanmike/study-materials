@@ -60,14 +60,33 @@ Transform property applies 2D or 3D transformations to an element allowing you t
 * **Skew**: `skew()` is specified with either one or two values, which represent the amount of skewing to be applied in each direction.
 
 ### Describe Floats and how they work.
+
+The float property allows for an element to be place on the left or right side of its container, allowing text and inline elements to wrap around it.
+
+* **Float**: `float` is taken out of the normal flow of the document, though still remaining part of it
+
 ### What are the different ways to visually hide content?
+
+Hiding content visually can be done multiple ways in CSS. You can hide an element with one of these ways. *Visibility, Display, Opacity, and Position*
+
+* **Visibility**: Setting `visibility` to `hidden` will hide the element. A `hidden` element will still affect the layout of the page, but will not capture any user interaction.
+* **Display**: Setting `display` to `none` will make sure that the box-model is not generated at all, no empty space will be left behind.
+* **Opacity**: Setting `opacity` to 0 will visually hide the content from the page. That means the element will still occupy its position and affect the layout of the page.
+* **Position**: Giving an element `absolute` position can allow you to move the element outside of the viewport. This wont affect layout and will still be actionable.
+
 ### What's the difference between inline and inline-block?
+
+The `display` property specifies how an element is displayed.
+
+* **Inline**: element does not start on a new line and only takes up as much width as necessary.
+* **Inline-Block**: allows to set the width and height on the element. Also, the toip and bottom margins / paddings are respected.
+
 
 # JAVASCRIPT
 
 ### What is a closure, and how/why would you use one?
 
-Closures are formed when a inner function (nested function) is defined inside of outer function, allowing access to the outer functions variables. Closures retain state and scope. Returning the nested function allows you to maintain access to the inner, outer, and global variables and arguments.
+Closures are formed when a inner function (nested function) is defined inside of outer function, allowing access to the outer functions variables. Closures retain state and scope. Returning the nested function allows you to maintain access to the inner, outer, and global variables, and arguments.
 
 
 ```javascript
