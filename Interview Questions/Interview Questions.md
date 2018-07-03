@@ -233,6 +233,95 @@ console.log(sound);
 ```
 
 ### Describe 3 ES6 features and how they differ from ES5.
+
+* **Arrow Functions**: have a shorter syntax compared to function expressions and lexically binds the this value. Arrow functions are always anonymous.
+
+```javascript
+// ES6 Arrow Function
+let nums = [1,2,3,4];
+
+nums.forEach(x => console.log(x * 2))
+
+// expected output: 2
+// expected output: 4
+// expected output: 6
+// expected output: 8
+
+// ES5 Function
+
+let nums = [1,2,3,4];
+
+nums.forEach(function(x){
+  console.log(x * 2)
+})
+
+// expected output: 2
+// expected output: 4
+// expected output: 6
+// expected output: 8
+```
+
+* **Destructuring**: makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals.
+
+```javascript
+// ES6 Destructuring
+
+// Arrays
+var list = [ 1 ]
+var [ x, y = 2 ] = list
+
+console.log(x) // 1
+console.log(y) // 2
+
+// Objects
+var obj = { a: 1 }
+var { a, b = 2 } = obj
+
+console.log(a) // 1
+console.log(b) // 2
+
+// ES5 version
+
+// Arrays
+var list = [ 1 ];
+var x = list[0];
+var y = list[1] === undefined ? 2 : list[1];
+
+console.log(x) // 1
+console.log(y) // 2
+
+
+// Objects
+var obj = { a: 1 };
+var a = obj.a;
+var b = obj.b === undefined ? 2 : obj.b;
+
+console.log(a) // 1
+console.log(b) // 2
+```
+
+* **Template Literals**: are strings that can include embedded expressions. This is sometimes referred to as string interpolation.
+
+```javascript
+// ES6 Template Literals
+var person = { name: "Bob" };
+var car = { make: "Honda", model: "Accord" };
+
+var message = `Hello I'm ${person.name}, I drive a ${car.make} ${car.model}.`;
+
+console.log(message)
+// expected output: 'Hello I'm Bob, I drive a Honda Accord.'
+
+// ES5 Version
+var person = { name: "Bob" };
+var car = { make: "Honda", model: "Accord" };
+
+var message = "Hello I'm " + person.name + ", I drive a " + car.make + " " + car.model + ".";
+
+console.log(message)
+// expected output: 'Hello I'm Bob, I drive a Honda Accord.'
+```
+
 ### What are the differences between ES6 class and ES5 function constructors?
 ### Describe how scoping works in JavaScript.
 ### Explain how to handle errors in JS.
