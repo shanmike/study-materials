@@ -176,6 +176,33 @@ console.log(obj)
 ```
 
 ### Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
+
+`forEach()` could be used when you're not trying to change the data in your array, but just want to do something with it. `map()` might be preferable when changing or altering data. Not only is it faster, but it returns a new array.
+
+* **For Each**: `forEach()` executes a provided function once for each array element
+
+```javascript
+var arr = ['a', 'b', 'c'];
+
+arr.forEach(letter => console.log(letter));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+```
+
+* **Map**: `map()` creates a new array with the results of calling a provided function on every element in the calling array
+
+```javascript
+var arr = [1, 2, 3, 4];
+
+// pass a function to map
+var map1 = arr.map(num => num * 2);
+
+console.log(map1);
+// expected output: [2, 4, 6, 8]
+```
+
 ### Describe square bracket notation and when you would use it.
 ### Describe 3 ES6 features and how they differ from ES5.
 ### What are the differences between ES6 class and ES5 function constructors?
