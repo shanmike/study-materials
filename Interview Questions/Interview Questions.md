@@ -236,8 +236,8 @@ console.log(sound);
 
 * **Arrow Functions**: have a shorter syntax compared to function expressions and lexically binds the this value. Arrow functions are always anonymous.
 
+ES6:
 ```javascript
-// ES6 Arrow Function
 let nums = [1,2,3,4];
 
 nums.forEach(x => console.log(x * 2))
@@ -246,8 +246,10 @@ nums.forEach(x => console.log(x * 2))
 // expected output: 4
 // expected output: 6
 // expected output: 8
+```
 
-// ES5 Function
+ES5:
+```javascript
 
 let nums = [1,2,3,4];
 
@@ -263,9 +265,8 @@ nums.forEach(function(x){
 
 * **Destructuring**: makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals.
 
+ES6:
 ```javascript
-// ES6 Destructuring
-
 // Arrays
 var list = [ 1 ]
 var [ x, y = 2 ] = list
@@ -279,9 +280,10 @@ var { a, b = 2 } = obj
 
 console.log(a) // 1
 console.log(b) // 2
+```
 
-// ES5 version
-
+ES5:
+```javascript
 // Arrays
 var list = [ 1 ];
 var x = list[0];
@@ -302,8 +304,8 @@ console.log(b) // 2
 
 * **Template Literals**: are strings that can include embedded expressions. This is sometimes referred to as string interpolation.
 
+ES6:
 ```javascript
-// ES6 Template Literals
 var person = { name: "Bob" };
 var car = { make: "Honda", model: "Accord" };
 
@@ -311,8 +313,10 @@ var message = `Hello I'm ${person.name}, I drive a ${car.make} ${car.model}.`;
 
 console.log(message)
 // expected output: 'Hello I'm Bob, I drive a Honda Accord.'
+```
 
-// ES5 Version
+ES5:
+```javascript
 var person = { name: "Bob" };
 var car = { make: "Honda", model: "Accord" };
 
