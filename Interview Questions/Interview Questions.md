@@ -204,6 +204,34 @@ console.log(map1);
 ```
 
 ### Describe square bracket notation and when you would use it.
+
+Bracket notation is used to access properties on an object and can look like this `arrayName[element]` and `objectName[property]`.
+
+* **Arrays**: you can specify the index in the brackets to access an element in the array
+
+```javascript
+let arr = ['a','b','c'];
+
+let letter = arr[1];
+
+console.log(letter);
+// expected output: b
+```
+
+* **Objects**: you can access properties on an object by specifying the property name in the brackets
+
+```javascript
+let obj = {
+  chicken: 'cluck',
+  cows: 'moo'
+};
+
+let sound = obj['cows'];
+
+console.log(sound);
+// expected output: moo
+```
+
 ### Describe 3 ES6 features and how they differ from ES5.
 ### What are the differences between ES6 class and ES5 function constructors?
 ### Describe how scoping works in JavaScript.
