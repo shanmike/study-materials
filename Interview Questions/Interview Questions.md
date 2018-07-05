@@ -336,15 +336,15 @@ ES6:
 var list = [ 1 ]
 var [ x, y = 2 ] = list
 
-console.log(x) // 1
-console.log(y) // 2
+console.log(x) // expected output: 1
+console.log(y) // expected output: 2
 
 // Objects
 var obj = { a: 1 }
 var { a, b = 2 } = obj
 
-console.log(a) // 1
-console.log(b) // 2
+console.log(a) // expected output: 1
+console.log(b) // expected output: 2
 ```
 
 ES5:
@@ -354,8 +354,8 @@ var list = [ 1 ];
 var x = list[0];
 var y = list[1] === undefined ? 2 : list[1];
 
-console.log(x) // 1
-console.log(y) // 2
+console.log(x) // expected output: 1
+console.log(y) // expected output: 2
 
 
 // Objects
@@ -363,8 +363,8 @@ var obj = { a: 1 };
 var a = obj.a;
 var b = obj.b === undefined ? 2 : obj.b;
 
-console.log(a) // 1
-console.log(b) // 2
+console.log(a) // expected output: 1
+console.log(b) // expected output: 2
 ```
 
 **Template Literals**: are strings that can include embedded expressions. This is sometimes referred to as string interpolation.
@@ -392,6 +392,43 @@ console.log(message)
 ```
 
 ## What are the differences between ES6 class and ES5 function constructors?
+
+ES6 classes make sure that an initialization function will be called and make it easier to maintain state. One of the benefits; convenient, self-contained syntax.
+
+ES6:
+```javascript
+class Person{
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  email(){
+    return this.name + this.age + "@gmail.com"
+  } 
+}
+
+var Jim = new Person("Jim", 25);
+
+console.log(Jim.email());
+// expected output: Jim25@gmail.com
+```
+
+ES5:
+```javascript
+function Person(name,age){
+  this.name = name;
+  this.age = age;
+  this.email = function(){
+    return this.name + this.age + '@gmail.com'
+  }
+}
+
+var Jim = new Person("Jim", 25);
+
+console.log(Jim.email());
+// expected output: Jim25@gmail.com
+```
+
 ## Describe how scoping works in JavaScript.
 ## Explain how to handle errors in JS.
 ## How does inheritance work in JavaScript?
