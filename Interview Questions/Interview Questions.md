@@ -430,6 +430,19 @@ console.log(Jim.email());
 ```
 
 ## Describe how scoping works in JavaScript.
+
+There are two types of scope that determines the accessibility of variables; Global and Local. Variables declared within a function become local, and can only be accessed within the function. Variables declared outside of a function are global, and all functions have access to it.
+
+```javascript
+// Code here can use the 'a' variable
+var a = "Global"
+
+function myFunction(){
+	var b = "Local" 
+// Code here can use 'a' or 'b' variables
+}
+```
+
 ## Explain how to handle errors in JS.
 ## How does inheritance work in JavaScript?
 ## What is a prototype in JavaScript?
