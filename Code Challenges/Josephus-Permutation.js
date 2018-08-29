@@ -26,10 +26,10 @@ function josephus(n,k){
     var a = []
     var c = k - 1
     var p = [...n]
-      p.map(i=>{
-        c = c % n.length
-        a.push(n.splice(c,1)[0])
-        c += k - 1;
-      })
-      return a
-    }
+    p.map(i=>{
+      c = c % n.length
+      a.push(n.splice(c,1)[0])
+      c += k - 1;
+    })
+  return a
+}
